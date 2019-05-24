@@ -48,7 +48,7 @@ class WeChatWiFi(BaseWeChatAPI):
         )
         return res
 
-    def add_device(self, shop_id, ssid, password, bssid):
+    def add_device(self, shop_id, ssid, password):
         """
         添加设备
 
@@ -68,7 +68,6 @@ class WeChatWiFi(BaseWeChatAPI):
                 'shop_id': shop_id,
                 'ssid': ssid,
                 'password': password,
-                'bssid': bssid,
             }
         )
 
